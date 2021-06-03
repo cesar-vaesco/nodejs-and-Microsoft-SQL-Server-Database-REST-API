@@ -26,7 +26,7 @@ export async function getConnection() {
 }
 
 
-
+export { sql };
 
 /*
 const dbSettings = {

@@ -1,7 +1,7 @@
 
 import { Router } from 'express';
 
-import { getProducts } from '../controllers/products.controller';
+import { createNewProducts, getProducts } from '../controllers/products.controller';
 
 const router = Router();
 
@@ -10,7 +10,7 @@ router.get('/products', getProducts);
 
 router.get('/products', getProducts);
 
-router.post('/products', getProducts);
+router.post('/products', createNewProducts);
 
 router.delete('/products', getProducts);
 
