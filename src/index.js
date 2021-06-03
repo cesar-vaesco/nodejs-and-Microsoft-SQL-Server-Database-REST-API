@@ -1,7 +1,7 @@
 
 import app from './app'
 
-import  './database/conexion';
+//import  './database/conexion';
 
 app.listen(app.get('port'));
 
