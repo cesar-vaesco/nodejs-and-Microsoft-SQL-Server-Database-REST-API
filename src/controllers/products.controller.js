@@ -69,3 +69,29 @@ export const getProductsById = async (req, res) => {
     }
 
 }
+
+
+
+export const deleteProductById = async (req, res) => {
+
+    const { id } = req.params;
+
+    if (isNaN(id)) {
+        return res.status(400).json({ msg: 'Bad Requst. Please Id must be number' });
+    }
+
+    try {
+        const pool = await getConnection();
+        const result = await pool.request()
+            .input('Id', id)
+            .query(queries.deleteProduct);
+
+        console.log(result);
+         res.sendStatus(204);
+
+    } catch (error) {
+        res.status(500);
+        res.send(error.message);
+    }
+
+}
