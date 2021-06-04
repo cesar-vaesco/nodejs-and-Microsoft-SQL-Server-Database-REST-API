@@ -1,5 +1,2 @@
-
-
-export * from './conexion';
-
-export { queries } from './querys';
+export * from "./connection";
+export { querys } from "./querys";
