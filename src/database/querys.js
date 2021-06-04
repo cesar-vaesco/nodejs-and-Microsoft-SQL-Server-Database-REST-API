@@ -4,5 +4,6 @@ export const queries = {
 
     getAllProducts: 'SELECT * FROM Products',
     addNewProducts: 'INSERT INTO Products (name, description, quantity) VALUES (@name, @description, @quantity)',
-    getProductById:'SELECT * FROM Products Where Id = @Id'
+    getProductById: 'SELECT * FROM Products Where Id = @Id',
+    deleteProduct: 'DELETE FROM Products Where Id = @Id'
 }
