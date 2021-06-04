@@ -1,15 +1,18 @@
 # Node & MSSQL Server API
-nodejs and Microsoft SQL Server Database REST API
+Nodejs and Microsoft SQL Server Database REST API
 
 ## environment variables
 
-DB_USER = youruser
-DB_PASSWORD = yourpassword
-DB_SERVER = localhost
-DB_DATABASE = yourdatabase
+|   |   |
+|---|---|
+| DB_USER | your_user |
+| DB_PASSWORD  | yourpassword |
+| DB_SERVER  | localhost |
+| DB_DATABASE  | yourdatabase |
 
+<br>
+<br>
 ### Módulos usados en proyecto
-
 
 |  Módulo |  Descripción |
 |---|---|
